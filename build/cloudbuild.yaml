@@ -2,8 +2,7 @@ steps:
   - id: 'Clone the repository'
     name: gcr.io/cloud-builders/git
     entrypoint: git
-    args: ['clone', '--depth', '1', '--branch', '$BRANCH_NAME', 
-          'https://source.developers.google.com/p/$PROJECT_ID/r/$REPO_NAME']
+    args: ['clone', '--depth', '1', '--branch', "https://github.com/Sruinard/gcp-ghack-mlops.git"]
 
   - id: 'Create a virtual env'
     name: python:3.10-slim
